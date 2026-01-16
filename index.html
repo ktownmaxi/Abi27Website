@@ -5,103 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abi 2027 - Hans-Multscher-Gymnasium</title>
 
-    <!-- Tailwind + FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body class="text-gray-800 text-center">
+<body class="text-gray-800 text-center bg-gray-50">
 
-    <!-- NAV -->
-    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
-        <div class="flex justify-center gap-8 py-3 font-semibold">
-            <a href="#hero" class="hover:text-red-600">Home</a>
-            <a href="#about" class="hover:text-red-600">Über uns</a>
-            <a href="#sponsoring" class="hover:text-red-600">Sponsoring</a>
-            <a href="#contact" class="hover:text-red-600">Kontakt</a>
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="flex justify-center gap-8 py-4 font-bold uppercase tracking-wide">
+            <a href="#hero" class="hover:text-red-600 transition">Home</a>
+            <a href="#about" class="hover:text-red-600 transition">Über uns</a>
+            <a href="#sponsoring" class="hover:text-red-600 transition">Sponsoring</a>
+            <a href="#contact" class="hover:text-red-600 transition">Kontakt</a>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <header id="hero" class="h-[90vh] flex flex-col justify-center items-center text-center bg-gradient-to-b from-red-50 to-white px-4">
-        <h1 class="text-5xl font-bold mb-3 text-red-700">Abi 2027</h1>
-        <p class="text-lg mb-6 text-red-600">Abimotto oder so</p>
-        <div class="w-48 h-24 border-2 border-dashed border-red-300 flex justify-center items-center text-red-600">
-            Hier könnten Sie stehen
+    <header id="hero" class="h-[85vh] flex flex-col justify-center items-center text-center bg-gradient-to-b from-red-100 to-white px-4">
+        <h1 class="text-6xl md:text-7xl font-extrabold mb-4 text-red-700 tracking-tight">ABI 2027</h1>
+        <p class="text-xl mb-10 text-gray-600 max-w-2xl font-medium">
+            Gemeinsam zum Abschluss am Hans-Multscher-Gymnasium Leutkirch.
+        </p>
+        <div class="w-64 h-32 border-2 border-dashed border-red-300 flex justify-center items-center text-red-500 font-semibold rounded-2xl bg-white shadow-sm italic">
+            Ihr Logo hier?
         </div>
     </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="max-w-3xl mx-auto px-4 py-20 text-center">
-        <h2 class="text-3xl font-bold mb-6 text-red-700">Über uns</h2>
-        <p class="text-lg">
-            ?
-        </p>
-    </section>
-
-    <!-- SPONSORING -->
-    <section id="sponsoring" class="max-w-3xl mx-auto px-4 py-20 text-center">
-        <h2 class="text-3xl font-bold mb-6 text-red-700">Sponsoring</h2>
-        <p class="text-lg mb-2">Text bezüglich Sponseren</p>
-        <!-- CTA als Button -->
-        <p class="mt-4">
-            <a href="#contact" class="inline-block px-5 py-3 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700">Jetzt Sponsor werden</a>
-        </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="max-w-3xl mx-auto px-4 py-20 text-center">
-        <h2 class="text-3xl font-bold mb-8 text-red-700">Kontakt</h2>
-
-        <!-- CONTACT INFO -->
-        <div class="space-y-3 mb-10 flex flex-col items-center">
-            <p class="flex items-center justify-center text-lg">
-                <i class="fa-solid fa-envelope text-xl mr-3 text-red-600"></i>
-                <a href="mailto:kontakt@hmg-leutkirch-abi-27.de" class="font-semibold hover:underline text-red-600">
-                    kontakt@hmg-leutkirch-abi-27.de
-                </a>
+    <section id="about" class="max-w-4xl mx-auto px-6 py-24">
+        <h2 class="text-4xl font-bold mb-8 text-red-700 uppercase tracking-tight">Über uns</h2>
+        <div class="bg-white p-10 rounded-3xl shadow-sm text-left leading-relaxed border border-gray-100">
+            <p class="text-lg mb-6">
+                Wir sind der Abiturjahrgang 2027 des Hans-Multscher-Gymnasiums in Leutkirch. Seit Jahren arbeiten wir gemeinsam auf unseren Schulabschluss hin. Unser Ziel ist es, diesen Meilenstein so unvergesslich wie möglich zu gestalten – nicht nur für uns, sondern für die gesamte Schulgemeinschaft.
             </p>
-
-            <p class="flex items-center justify-center text-lg">
-                <i class="fa-brands fa-tiktok text-xl mr-3 text-red-600"></i>
-                <a href="https://www.tiktok.com/abiAcc" target="_blank" class="font-semibold hover:underline text-red-600">
-                    @AbiAccount
-                </a>
+            <p class="text-lg mb-6 font-medium text-gray-700">
+                Warum Sponsoring?
+            </p>
+            <p class="text-lg">
+                Die Planung von Abiball, Abizeitung und weiteren Events erfordert finanzielle Mittel. Mit Ihrer Unterstützung helfen Sie uns, diese Ziele zu verwirklichen und erhalten im Gegenzug eine authentische Präsenz in einem regionalen Umfeld mit hoher Sichtbarkeit.
             </p>
         </div>
-
-        <!-- FORM -->
-        <form class="space-y-4 max-w-xl mx-auto text-left">
-            <input type="text" placeholder="Name" required
-                class="w-full p-3 border border-red-200 rounded-md focus:ring-2 focus:ring-red-300 outline-none" />
-
-            <input type="email" placeholder="E-Mail" required
-                class="w-full p-3 border border-red-200 rounded-md focus:ring-2 focus:ring-red-300 outline-none" />
-
-            <textarea rows="5" placeholder="Nachricht"
-                class="w-full p-3 border border-red-200 rounded-md focus:ring-2 focus:ring-red-300 outline-none"></textarea>
-
-            <button type="submit"
-                class="px-6 py-3 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 cursor-pointer">
-                Absenden
-            </button>
-        </form>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-red-50 py-16 text-center">
-        <p class="font-semibold text-lg text-red-700">Sponsoren</p>
-
-        <div class="flex justify-center flex-wrap gap-6 mt-6">
-            <div class="w-28 h-14 border-2 border-dashed border-red-300 flex justify-center items-center text-red-600">Logo</div>
-            <div class="w-28 h-14 border-2 border-dashed border-red-300 flex justify-center items-center text-red-600">Logo</div>
-            <div class="w-28 h-14 border-2 border-dashed border-red-300 flex justify-center items-center text-red-600">Logo</div>
+    <section id="sponsoring" class="max-w-6xl mx-auto px-6 py-24">
+        <h2 class="text-4xl font-bold mb-4 text-red-700 uppercase tracking-tight">Sponsoring-Pakete</h2>
+        
+        <div class="flex flex-wrap justify-center gap-8 mb-16 mt-8">
+            <div class="flex items-center gap-3 bg-red-50 px-5 py-3 rounded-full text-red-700 font-bold border border-red-100 shadow-sm">
+                <i class="fa-solid fa-users text-xl"></i> <span>~1000 Kontakte</span>
+            </div>
+            <div class="flex items-center gap-3 bg-red-50 px-5 py-3 rounded-full text-red-700 font-bold border border-red-100 shadow-sm">
+                <i class="fa-solid fa-location-dot text-xl"></i> <span>Region Leutkirch</span>
+            </div>
+            <div class="flex items-center gap-3 bg-red-50 px-5 py-3 rounded-full text-red-700 font-bold border border-red-100 shadow-sm">
+                <i class="fa-solid fa-mobile-screen-button text-xl"></i> <span>Social Media Power</span>
+            </div>
         </div>
 
-        <p class="text-sm mt-10 text-red-600">
-            <a href="impressum.html" class="hover:underline mr-4">Impressum</a>
-            <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            <div class="group bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div class="w-12 h-12 bg-gray-100 text-gray-500 rounded-2xl flex items-center justify-center mb-6 text-xl group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Unterstützer:in</h3>
+                <span class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-black mb-6 italic">ab 250€</span>
+                <ul class="space-y-3 text-gray-600 mb-8">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> Website-Erwähnung</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> Social-Media Posts</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> Abiball-Programm</li>
+                </ul>
+            </div>
+
+            <div class="group bg-white p-8 rounded-3xl shadow-lg border-2 border-red-600 ring-4 ring-red-50 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
+                <div class="absolute top-4 right-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Top Wahl</div>
+                <div class="w-12 h-12 bg-red-600 text-white rounded-2xl flex items-center justify-center mb-6 text-xl">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Möglichmacher:in</h3>
+                <span class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-black mb-6 italic">ab 500€</span>
+                <p class="text-xs font-bold text-gray-400 mb-3 uppercase tracking-wider italic">Zusätzlich zu allem in Unterstützer:in</p>
+                <ul class="space-y-3 text-gray-600 mb-8 font-medium">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> Logo auf Plakaten & Flyern</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> Werbematerial-Auslage</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> Abdruck in der Abizeitung</li>
+                </ul>
+            </div>
+
+            <div class="group bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div class="w-12 h-12 bg-gray-100 text-gray-500 rounded-2xl flex items-center justify-center mb-6 text-xl group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Partner:in</h3>
+                <span class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-black mb-6 italic">ab 750€</span>
+                <p class="text-xs font-bold text-gray-400 mb-3 uppercase tracking-wider italic">Zusätzlich zu allem in Möglichmacher:in:</p>
+                <ul class="space-y-3 text-gray-600 mb-8">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> Werbebanner bei Events</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> 1/4 Seite Abizeitung</li>
+                </ul>
+            </div>
+
+            <div class="group bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div class="w-12 h-12 bg-gray-100 text-gray-500 rounded-2xl flex items-center justify-center mb-6 text-xl group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Exklusivpartner:in</h3>
+                <span class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-black mb-6 italic">ab 1000€</span>
+                <p class="text-xs font-bold text-gray-400 mb-3 uppercase tracking-wider italic">Zusätzlich zu allem in Partner:in:</p>
+                <ul class="space-y-3 text-gray-600 mb-8">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> 1/2 Seite Abizeitung</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plus text-red-500 mt-1"></i> Eigenes Social-Media Video</li>
+                </ul>
+            </div>
+
+            <div class="group bg-gray-900 text-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300 lg:col-span-2 text-left">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex-1">
+                        <div class="w-12 h-12 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-xl">
+                            <i class="fa-solid fa-gem text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-2 uppercase italic tracking-wider text-red-500">Hauptsponsor</h3>
+                        <span class="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-sm font-black mb-6 italic">ab 1500€</span>
+                    </div>
+                    <div class="flex-1 border-l border-white/10 pl-0 md:pl-10">
+                        <ul class="space-y-4 font-medium">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-yellow-500 mt-1"></i> Alles aus den vorherigen Paketen</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-yellow-500 mt-1"></i> Namentliche Erwähnung am Abiball</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-yellow-500 mt-1"></i> Prominente Platzierung auf ALLEN Mitteln</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 p-8 bg-white rounded-3xl border border-dashed border-gray-300 inline-block max-w-2xl w-full">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-file"></i>    
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-gray-800">Offizielle Sponsorenmappe</h4>
+                        <p class="text-sm text-gray-500">Alle Details, Reichweiten und Projekte als PDF.</p>
+                    </div>
+                </div>
+                <a href="Sponsoringmappe-Abi27.pdf" download class="flex items-center gap-2 px-6 py-3 bg-gray-800 text-white font-bold rounded-xl hover:bg-gray-700 transition shadow-md">
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <a href="#contact" class="inline-block px-12 py-5 bg-red-600 text-white font-black rounded-full shadow-lg shadow-red-200 hover:bg-red-700 transition transform hover:scale-105 uppercase tracking-widest">Jetzt Partner werden</a>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-24 border-t border-gray-100">
+        <h2 class="text-4xl font-bold mb-12 text-red-700 uppercase tracking-tight italic">Kontakt</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="space-y-8 text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-gray-500">Ansprechpartner</h3>
+                    <p class="text-2xl font-bold text-gray-800">Maximillian Bernhard &<br>Constantin Künst</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4 group">
+                        <div class="w-10 h-10 bg-red-50 rounded-full flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <a href="mailto:kontakt@hmg-leutkirch-abi-27.de" class="font-bold text-lg hover:text-red-600 transition">kontakt@hmg-leutkirch-abi-27.de</a>
+                    </div>
+                    <div class="flex items-center space-x-4 group">
+                        <div class="w-10 h-10 bg-red-50 rounded-full flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <a href="tel:+4917641983999" class="font-bold text-lg hover:text-red-600 transition">+49 176 41983999</a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/xaqqqekd" method="POST" class="space-y-4 text-left p-8 bg-white rounded-3xl shadow-xl border border-gray-50">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 ml-1">Name / Firma</label>
+                    <input type="text" name="name" placeholder="Eure Firma" required class="w-full p-4 bg-gray-50 border-none rounded-2xl outline-none focus:ring-2 focus:ring-red-300 transition-all" />
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 ml-1">E-Mail Adresse</label>
+                    <input type="email" name="_replyto" placeholder="mail@firma.de" required class="w-full p-4 bg-gray-50 border-none rounded-2xl outline-none focus:ring-2 focus:ring-red-300 transition-all" />
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 ml-1">Anfrage / Wunschpaket</label>
+                    <textarea name="message" rows="4" placeholder="Hallo, wir interessieren uns ..." class="w-full p-4 bg-gray-50 border-none rounded-2xl outline-none focus:ring-2 focus:ring-red-300 transition-all"></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 bg-red-600 text-white font-black rounded-2xl hover:bg-red-700 shadow-lg shadow-red-100 uppercase tracking-widest transition-all">Anfrage abschicken</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-20 px-4">
+        <p class="font-bold text-xl mb-10 text-gray-400 uppercase tracking-widest">Unsere Partner</p>
+        <div class="flex justify-center flex-wrap gap-12 opacity-30 grayscale hover:grayscale-0 transition-all duration-700 mb-16">
+            <div class="w-32 h-16 border-2 border-dashed border-gray-400 rounded-xl flex justify-center items-center">Logo</div>
+            <div class="w-32 h-16 border-2 border-dashed border-gray-400 rounded-xl flex justify-center items-center">Logo</div>
+            <div class="w-32 h-16 border-2 border-dashed border-gray-400 rounded-xl flex justify-center items-center">Logo</div>
+        </div>
+        <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">
+            <a href="impressum.html" class="hover:text-red-600 mr-6 transition">Impressum</a>
+            <a href="datenschutz.html" class="hover:text-red-600 transition">Datenschutz</a>
         </p>
+        <p class="mt-6 text-[10px] text-gray-400">&copy; 2026 Abiturjahrgang 2027 - HMG Leutkirch</p>
     </footer>
 
 </body>
