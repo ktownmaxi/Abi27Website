@@ -20,15 +20,49 @@
         </div>
     </nav>
 
-    <header id="hero" class="h-[85vh] flex flex-col justify-center items-center text-center bg-gradient-to-b from-red-100 to-white px-4">
-        <h1 class="text-6xl md:text-7xl font-extrabold mb-4 text-red-700 tracking-tight">ABI 2027</h1>
-        <p class="text-xl mb-10 text-gray-600 max-w-2xl font-medium">
-            Gemeinsam zum Abschluss am Hans-Multscher-Gymnasium Leutkirch.
-        </p>
-        <div class="w-64 h-32 border-2 border-dashed border-red-300 flex justify-center items-center text-red-500 font-semibold rounded-2xl bg-white shadow-sm italic">
-            Ihr Logo hier?
+    <header id="hero" class="h-[85vh] flex flex-col justify-center items-center text-center bg-gradient-to-b from-red-100 to-white px-4 relative">
+    <h1 class="text-6xl md:text-7xl font-extrabold mb-4 text-red-700 tracking-tight">ABI 2027</h1>
+    <p class="text-xl mb-10 text-gray-600 max-w-2xl font-medium">
+        Gemeinsam zum Abschluss am Hans-Multscher-Gymnasium Leutkirch.
+    </p>
+
+    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 max-w-4xl mt-8">
+        
+        <div class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-2xl shadow-md p-4 flex justify-center items-center transform translate-y-4 rotate-2 transition hover:scale-110 z-10">
+            <div class="w-32 h-32 border-2 border-dashed border-red-300 flex justify-center items-center text-red-500 font-semibold rounded-2xl bg-white shadow-sm italic">
+                Ihr Logo hier?
+            </div>
         </div>
-    </header>
+
+
+        <a 
+            href="https://www.ingbuero-stotz.de/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-2xl shadow-md p-4 flex justify-center items-center transform translate-y-4 rotate-2 transition hover:scale-110 z-10"
+        >
+            <img 
+                src="ingenieurbuero-stotz_p.svg" 
+                alt="Ingenieurbüro Stotz" 
+                class="max-h-full max-w-full object-contain"
+            >
+        </a>
+
+        <a 
+            href="https://www.kreissparkasse-ravensburg.de/de/home.html" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-2xl shadow-md p-4 flex justify-center items-center transform translate-y-4 rotate-2 transition hover:scale-110 z-10"
+        >
+            <img 
+                src="ksk-logo.png" 
+                alt="Kreissparkasse Ravensburg" 
+                class="max-h-full max-w-full object-contain"
+            >
+        </a>
+
+    </div>
+</header>
 
     <section id="about" class="max-w-6xl mx-auto px-6 py-24">
         <div class="text-center mb-16">
@@ -281,9 +315,9 @@
 
     <footer class="bg-gray-100 py-20 px-4">
         <p class="font-bold text-xl mb-10 text-gray-400 uppercase tracking-widest">Unsere Partner</p>
-        <div class="flex justify-center flex-wrap gap-12 opacity-30 grayscale hover:grayscale-0 transition-all duration-700 mb-16">
-            <div class="w-32 h-16 border-2 border-dashed border-gray-400 rounded-xl flex justify-center items-center">Ihr Logo</div>
-            <div class="w-32 h-16 border-2 border-dashed border-gray-400 rounded-xl flex justify-center items-center">Ihr Logo</div>
+        <div class="flex justify-center flex-wrap gap-8 transition-all duration-700 mb-16">
+            <img src="ingenieurbuero-stotz_p.svg" alt="Partner 1 Name" class="h-16 w-auto object-contain">
+            <img src="ksk-logo.png" alt="Partner 2 Name" class="h-16 w-auto object-contain">
             <div class="w-32 h-16 border-2 border-dashed border-gray-400 rounded-xl flex justify-center items-center">Ihr Logo</div>
         </div>
         <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">
